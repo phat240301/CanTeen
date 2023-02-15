@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:letterSpacing="0.05" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:maxLines="1"
+        android:hint="@string/hoten"
+        android:background="@drawable/round_edit_text"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:maxLines="1"
+        android:hint="Email"
+        android:background="@drawable/round_edit_text"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:maxLines="1"
+        android:hint="Số điên thoại"
+        android:background="@drawable/round_edit_text"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:maxLines="1"
+        android:hint="Ngày sinh"
+        android:background="@drawable/round_edit_text"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:maxLines="1"
+        android:hint="Mật khẩu"
+        android:background="@drawable/round_edit_text"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:maxLines="1"
+        android:hint="Xác nhận mật khẩu"
+        android:background="@drawable/round_edit_text"/>
+
+    <Button
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/round_button"
+        android:drawableTop="@drawable/ic_outline_register" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quay lại"
+        android:textStyle="bold"
+        android:gravity="bottom"
+        android:layout_marginTop="50dp"
+        android:letterSpacing="0.05"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
