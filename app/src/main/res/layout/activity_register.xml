@@ -7,108 +7,223 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <ImageButton
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="center"
+        android:background="@drawable/arrow"
+        android:backgroundTint="#0000FF"/>
     <TextView
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Đăng ký"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:letterSpacing="0.05" />
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
+        android:letterSpacing="0.05"
+        android:text="Đăng ký tài khoản"
+        android:fontFamily="@font/font_food"
+        android:textColor="#0000FF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/textInputLayout"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_marginStart="40dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="40dp"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
         android:maxLines="1"
-        android:hint="@string/hoten"
-        android:background="@drawable/round_edit_text"/>
+        android:hint="@string/h_t_n"
+        app:startIconDrawable="@drawable/account"
+        app:endIconMode="clear_text"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxStrokeColor="#68c1da"
+        app:boxStrokeWidth="1dp"
+        app:startIconTint="#68c1da"
+        app:hintTextColor="#68c1da">
 
-    <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:maxLength="21"
+            android:maxLines="1"
+            android:outlineSpotShadowColor="@color/black"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/textInputLayout2"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_marginStart="40dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="40dp"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
         android:maxLines="1"
         android:hint="Email"
-        android:background="@drawable/round_edit_text"/>
+        app:startIconDrawable="@drawable/mail"
+        app:endIconMode="clear_text"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxStrokeColor="#68c1da"
+        app:boxStrokeWidth="1dp"
+        app:startIconTint="#68c1da"
+        app:hintTextColor="#68c1da"
+        >
 
-    <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Email"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/textInputLayout1"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_marginStart="40dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="40dp"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
         android:maxLines="1"
-        android:hint="Số điên thoại"
-        android:background="@drawable/round_edit_text"/>
+        android:hint="Số điện thoại"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:prefixText="(+84) "
+        app:prefixTextColor="@color/black"
+        app:startIconDrawable="@drawable/smartphone"
+        app:endIconMode="clear_text"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxStrokeColor="#68c1da"
+        app:boxStrokeWidth="1dp"
+        app:startIconTint="#68c1da"
+        app:hintTextColor="#68c1da">
 
-    <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="12"
+            android:textStyle="bold"
+            android:maxLines="1" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/textInputLayout3"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_marginStart="40dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="40dp"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:maxLines="1"
-        android:hint="Ngày sinh"
-        android:background="@drawable/round_edit_text"/>
-
-    <EditText
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_marginStart="40dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="40dp"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
         android:maxLines="1"
         android:hint="Mật khẩu"
-        android:background="@drawable/round_edit_text"/>
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:startIconDrawable="@drawable/padlock"
+        app:endIconMode="password_toggle"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxStrokeColor="#68c1da"
+        app:boxStrokeWidth="1dp"
+        app:startIconTint="#68c1da"
+        app:hintTextColor="#68c1da">
 
-    <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Password"
+            android:maxLines="1"
+            android:maxLength="12"
+            android:inputType="textPassword"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/textInputLayout4"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_marginStart="40dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="40dp"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
         android:maxLines="1"
-        android:hint="Xác nhận mật khẩu"
-        android:background="@drawable/round_edit_text"/>
+        android:hint="Nhập lại mật khẩu"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:startIconDrawable="@drawable/padlock"
+        app:endIconMode="password_toggle"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxStrokeColor="#68c1da"
+        app:boxStrokeWidth="1dp"
+        app:startIconTint="#68c1da"
+        app:hintTextColor="#68c1da">
 
-    <Button
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmPassword"
+            android:maxLines="1"
+            android:maxLength="12"
+            android:inputType="textPassword"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:text="Đăng ký"
         android:gravity="center"
-        android:paddingLeft="50dp"
         android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
-        android:background="@drawable/round_button"
-        android:drawableTop="@drawable/ic_outline_register" />
+        android:layout_gravity="bottom"
+        android:fontFamily="@font/font_food"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/round_button" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quay lại"
         android:textStyle="bold"
+        android:textColorHighlight="#808080"
         android:gravity="bottom"
         android:layout_marginTop="50dp"
         android:letterSpacing="0.05"
         android:textSize="15sp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="bottom|center" />
 </LinearLayout>
